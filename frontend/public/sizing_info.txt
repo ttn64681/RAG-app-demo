@@ -1,0 +1,7 @@
+pfps = 76x76px
+bubble-me (tail-facing left) = 48x40
+bubble-you (tail-facing right) = 48x40
+To split the bubble into 9-slices for dynamic text-sizing:
+- top-left, top-right, bottom-left, and bottom-right corner is 12x16
+- left-middle and right-middle portion is also 12x16
+- top-middle and bottom-middle portion is 16x16

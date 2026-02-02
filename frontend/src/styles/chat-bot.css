@@ -1,0 +1,71 @@
+/* Pixel art rendering for chat bubbles */
+.pixel-bubble {
+  image-rendering: pixelated;
+  image-rendering: -moz-crisp-edges;
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
+}
+
+/* Ensure pixel art images maintain their style */
+.pixel-art {
+  image-rendering: pixelated;
+  image-rendering: -moz-crisp-edges;
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
+}
+
+/* Animated ellipsis for loading */
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.3;
+  }
+}
+
+.animate-pulse {
+  animation: pulse 1.5s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+/* Delay classes for staggered ellipsis animation */
+.animate-pulse.delay-0 {
+  animation-delay: 0s;
+}
+
+.animate-pulse.delay-200 {
+  animation-delay: 0.2s;
+}
+
+.animate-pulse.delay-400 {
+  animation-delay: 0.4s;
+}
+
+/* Message bubble styles - moved from inline styles */
+.message-bubble {
+  position: relative;
+  display: inline-block;
+  border-image-slice: 16 12 16 12 fill;
+  border-image-width: 16px 12px;
+  border-image-outset: 0;
+  border-image-repeat: stretch;
+  border-style: solid;
+  border-width: 16px 12px;
+  padding: 8px 12px;
+  min-width: 48px;
+  min-height: 40px;
+  image-rendering: pixelated;
+}
+
+.message-bubble-me {
+  border-image-source: url('/bubble-me.png');
+}
+
+.message-bubble-you {
+  border-image-source: url('/bubble-you.png');
+}
+
+/* Loading bubble specific styles */
+.loading-bubble {
+  border-image-source: url('/bubble-me.png');
+}
