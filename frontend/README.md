@@ -1,16 +1,17 @@
 # RAG Portfolio Chatbot
 
-A personal portfolio agent chatbot built with RAG (Retrieval-Augmented Generation), featuring pixel-art message bubbles and a seamless, free tech stack.
+A personal portfolio agent chatbot built with RAG (Retrieval-Augmented Generation), featuring pixel-art message bubbles and a free tech stack.
+(Using this to help practice and serve as reference for my Personal Portfolio (also on my GitHub).
 
 ## Features
 
-- 🎨 **Pixel-art UI**: Dynamic 9-slice scaled message bubbles with profile pictures
-- 🤖 **RAG-powered**: Retrieval-Augmented Generation for accurate portfolio responses
-- 💰 **100% Free**: Uses Google Gemini API free tier (no login required for users!)
-- ⚡ **Fast**: Google Gemini 1.5 Flash for real-time responses
-- 🔍 **Vector Search**: Redis-based vector storage for semantic search
-- 🛡️ **Rate Limited**: Built-in rate limiting to prevent spam and API abuse
-- 💾 **Storage Optimized**: Only embeddings stored in Redis, portfolio text in code
+- **Pixel-art UI**: Dynamic 9-slice scaled message bubbles with profile pictures
+- **RAG-powered**: Retrieval-Augmented Generation for accurate portfolio responses
+- **100% Free**: Uses Google Gemini API free tier (no login required for users)
+- **Fast**: Google Gemini 2.5 Flash for real-time responses
+- **Vector Search**: Redis-based vector storage for semantic search
+- **Rate Limited**: Built-in rate limiting to prevent spam and API abuse
+- **Storage Optimized**: Only embeddings stored in Redis, portfolio text in code
 
 ## Tech Stack
 
